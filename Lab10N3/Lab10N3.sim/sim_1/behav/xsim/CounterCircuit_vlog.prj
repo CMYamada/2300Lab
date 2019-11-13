@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab10N3.srcs/sources_1/new/SlowClock.v" \
+"../../../../Lab10N3.srcs/sources_1/imports/sources_1/imports/new/Tff.v" \
+"../../../../Lab10N3.srcs/sources_1/imports/sources_1/imports/new/UpCounter4Bit.v" \
+"../../../../Lab10N3.srcs/sources_1/imports/sources_1/new/CounterCircuit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1573183645">
+  <File Type="BITSTR-BMM" Name="UpCounter4Bit_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="UpCounter4Bit_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="UpCounter4Bit_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="UpCounter4Bit_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="UpCounter4Bit.tcl"/>
+  <File Type="OPT-TIMING" Name="UpCounter4Bit_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="UpCounter4Bit_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="UpCounter4Bit_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="UpCounter4Bit_reports.tcl"/>
+  <File Type="OPT-DRC" Name="UpCounter4Bit_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="UpCounter4Bit.hwdef"/>
+  <File Type="PWROPT-DCP" Name="UpCounter4Bit_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="UpCounter4Bit_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="UpCounter4Bit_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="UpCounter4Bit_placed.dcp"/>
+  <File Type="PLACE-IO" Name="UpCounter4Bit_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="UpCounter4Bit_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="UpCounter4Bit_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="UpCounter4Bit_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="UpCounter4Bit_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="UpCounter4Bit_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="UpCounter4Bit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="UpCounter4Bit.bgn"/>
+  <File Type="PLACE-TIMING" Name="UpCounter4Bit_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="UpCounter4Bit_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="UpCounter4Bit.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="UpCounter4Bit_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="UpCounter4Bit_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="UpCounter4Bit_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="UpCounter4Bit.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="UpCounter4Bit_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="UpCounter4Bit_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="UpCounter4Bit_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="UpCounter4Bit_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="UpCounter4Bit_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="UpCounter4Bit_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="UpCounter4Bit.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="UpCounter4Bit_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="UpCounter4Bit.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="UpCounter4Bit_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="UpCounter4Bit_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="UpCounter4Bit.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="UpCounter4Bit_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="UpCounter4Bit_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="UpCounter4Bit_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="UpCounter4Bit_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="UpCounter4Bit_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="UpCounter4Bit_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="UpCounter4Bit_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="UpCounter4Bit_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="UpCounter4Bit_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="UpCounter4Bit_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="UpCounter4Bit_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="UpCounter4Bit_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="UpCounter4Bit_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="UpCounter4Bit_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="UpCounter4Bit_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="UpCounter4Bit_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="UpCounter4Bit_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="UpCounter4Bit_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="UpCounter4Bit_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="UpCounter4Bit.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="UpCounter4Bit_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="UpCounter4Bit.rbt"/>
+  <File Type="BITSTR-NKY" Name="UpCounter4Bit.nky"/>
+  <File Type="BG-DRC" Name="UpCounter4Bit.drc"/>
+  <File Type="RDI-RDI" Name="UpCounter4Bit.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Tff.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UpCounter4Bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="UpCounter4Bit"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1573094784"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

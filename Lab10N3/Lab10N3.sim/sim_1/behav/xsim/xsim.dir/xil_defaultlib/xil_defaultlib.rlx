@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Lab10N3/Lab10N3.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Lab10N3/Lab10N3.srcs/sim_1/new/slowclocksim.v,1573100286,verilog,,,,slowclocksim,,,,,,,,
+D:/Lab10N3/Lab10N3.srcs/sources_1/imports/new/CounterCircuit.v,1573182664,verilog,,D:/Lab10N3/Lab10N3.srcs/sources_1/new/SlowClock.v,,CounterCircuit,,,,,,,,
+D:/Lab10N3/Lab10N3.srcs/sources_1/imports/sources_1/imports/new/Tff.v,1573182650,verilog,,D:/Lab10N3/Lab10N3.srcs/sources_1/imports/sources_1/imports/new/UpCounter4Bit.v,,Tff,,,,,,,,
+D:/Lab10N3/Lab10N3.srcs/sources_1/imports/sources_1/imports/new/UpCounter4Bit.v,1573099446,verilog,,D:/Lab10N3/Lab10N3.srcs/sim_1/new/slowclocksim.v,,UpCounter4Bit,,,,,,,,
+D:/Lab10N3/Lab10N3.srcs/sources_1/new/SlowClock.v,1573099758,verilog,,D:/Lab10N3/Lab10N3.srcs/sources_1/imports/sources_1/imports/new/Tff.v,,SlowClock,,,,,,,,
+D:/Lab10N3/Lab10N3.srcs/sources_1/new/driver.v,1573099400,verilog,,D:/Lab10N3/Lab10N3.srcs/sim_1/new/slowclocksim.v,,driver,,,,,,,,

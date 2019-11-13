@@ -1,0 +1,20 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 13718b15026b481d98075298b705516f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot slowclocksim_behav xil_defaultlib.slowclocksim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 't' [D:/Lab10N3/Lab10N3.srcs/sources_1/imports/sources_1/imports/new/UpCounter4Bit.v:28]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 't' [D:/Lab10N3/Lab10N3.srcs/sources_1/imports/sources_1/imports/new/UpCounter4Bit.v:29]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 't' [D:/Lab10N3/Lab10N3.srcs/sources_1/imports/sources_1/imports/new/UpCounter4Bit.v:30]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 't' [D:/Lab10N3/Lab10N3.srcs/sources_1/imports/sources_1/imports/new/UpCounter4Bit.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SlowClock
+Compiling module xil_defaultlib.Tff
+Compiling module xil_defaultlib.UpCounter4Bit
+Compiling module xil_defaultlib.CounterCircuit
+Compiling module xil_defaultlib.slowclocksim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot slowclocksim_behav

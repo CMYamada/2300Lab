@@ -1,0 +1,8 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Lab10/Lab10.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Lab10/Lab10.srcs/sim_1/new/up_cnt_4bit_tff_sim.v,1573082522,verilog,,,,up_cnt_4bit_tff_sim,,,,,,,,
+D:/Lab10/Lab10.srcs/sources_1/new/Tff.v,1573091342,verilog,,D:/Lab10/Lab10.srcs/sources_1/new/UpCounter4Bit.v,,Tff,,,,,,,,
+D:/Lab10/Lab10.srcs/sources_1/new/UpCounter4Bit.v,1573082438,verilog,,D:/Lab10/Lab10.srcs/sim_1/new/up_cnt_4bit_tff_sim.v,,UpCounter4Bit,,,,,,,,
