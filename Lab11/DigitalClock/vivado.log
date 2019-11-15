@@ -1,0 +1,414 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 14 19:09:50 2019
+# Process ID: 11164
+# Current directory: D:/Lab11/DigitalClock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11772 D:\Lab11\DigitalClock\DigitalClock.xpr
+# Log file: D:/Lab11/DigitalClock/vivado.log
+# Journal file: D:/Lab11/DigitalClock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Lab11/DigitalClock/DigitalClock.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 732.953 ; gain = 125.527
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF3AEA
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2827.066 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2827.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2827.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 2976.344 ; gain = 1041.969
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: DigitalClock
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2990.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DigitalClock' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/DigitalClock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FourHundredHzClock' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/FourHundredHzClock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FourHundredHzClock' (1#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/FourHundredHzClock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OneHzClock' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/OneHzClock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OneHzClock' (2#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/OneHzClock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ZeroNineCounter' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/ZeroNineCounter/ZeroNineCounter.srcs/sources_1/new/ZeroNineCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ZeroNineCounter' (3#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/ZeroNineCounter/ZeroNineCounter.srcs/sources_1/new/ZeroNineCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ZeroFiveCounter' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/ZeroFiveCounter/ZeroFiveCounter.srcs/sources_1/new/ZeroFiveCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ZeroFiveCounter' (4#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/ZeroFiveCounter/ZeroFiveCounter.srcs/sources_1/new/ZeroFiveCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockEnable' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/ClockEnable.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockEnable' (5#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/ClockEnable.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FiveNineSecondDetector' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/FiveNineSecondDetector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FiveNineSecondDetector' (6#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/FiveNineSecondDetector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FourToOneMultiplexer' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/FourToOneMultiplexer/FourToOneMultiplexer.srcs/sources_1/new/FourToOneMultiplexer.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/FourToOneMultiplexer/FourToOneMultiplexer.srcs/sources_1/new/FourToOneMultiplexer.v:31]
+WARNING: [Synth 8-567] referenced signal 'IN0' should be on the sensitivity list [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/FourToOneMultiplexer/FourToOneMultiplexer.srcs/sources_1/new/FourToOneMultiplexer.v:30]
+WARNING: [Synth 8-567] referenced signal 'IN1' should be on the sensitivity list [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/FourToOneMultiplexer/FourToOneMultiplexer.srcs/sources_1/new/FourToOneMultiplexer.v:30]
+WARNING: [Synth 8-567] referenced signal 'IN2' should be on the sensitivity list [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/FourToOneMultiplexer/FourToOneMultiplexer.srcs/sources_1/new/FourToOneMultiplexer.v:30]
+WARNING: [Synth 8-567] referenced signal 'IN3' should be on the sensitivity list [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/FourToOneMultiplexer/FourToOneMultiplexer.srcs/sources_1/new/FourToOneMultiplexer.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'FourToOneMultiplexer' (7#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab11/FourToOneMultiplexer/FourToOneMultiplexer.srcs/sources_1/new/FourToOneMultiplexer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UpCounter2Bit' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/new/UpCounter2Bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Tff' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/new/Tff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Tff' (8#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/new/Tff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'UpCounter2Bit' (9#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/new/UpCounter2Bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TwoFourDecoder' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/TwoFourDecoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TwoFourDecoder' (10#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/TwoFourDecoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SevenSeg' [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab10N1/Lab10N1.srcs/sources_1/new/SevenSeg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSeg' (11#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/imports/Lab10N1/Lab10N1.srcs/sources_1/new/SevenSeg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DigitalClock' (12#1) [D:/Lab11/DigitalClock/DigitalClock.srcs/sources_1/new/DigitalClock.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2990.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2990.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2990.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Lab11/DigitalClock/DigitalClock.srcs/constrs_1/imports/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/Lab11/DigitalClock/DigitalClock.srcs/constrs_1/imports/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3057.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3057.324 ; gain = 66.727
+28 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3057.324 ; gain = 66.727
+close_design
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 14 19:25:05 2019] Launched synth_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/synth_1/runme.log
+[Thu Nov 14 19:25:05 2019] Launched impl_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF3AEA
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 14 19:35:08 2019] Launched synth_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/synth_1/runme.log
+[Thu Nov 14 19:35:08 2019] Launched impl_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF3AEA
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 14 19:42:51 2019] Launched synth_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/synth_1/runme.log
+[Thu Nov 14 19:42:51 2019] Launched impl_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF3AEA
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 14 19:48:28 2019] Launched synth_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/synth_1/runme.log
+[Thu Nov 14 19:48:28 2019] Launched impl_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF3AEA
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 14 19:54:08 2019] Launched synth_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/synth_1/runme.log
+[Thu Nov 14 19:54:08 2019] Launched impl_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.045 . Memory (MB): peak = 3444.531 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.045 . Memory (MB): peak = 3444.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3444.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 14 19:59:06 2019] Launched synth_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/synth_1/runme.log
+[Thu Nov 14 19:59:06 2019] Launched impl_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/runme.log
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF3AEA
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 14 20:03:26 2019] Launched synth_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/synth_1/runme.log
+[Thu Nov 14 20:03:26 2019] Launched impl_1...
+Run output will be captured here: D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF3AEA
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292ABF3AEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF3AEA
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Lab11/DigitalClock/DigitalClock.runs/impl_1/DigitalClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
